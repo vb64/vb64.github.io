@@ -1,6 +1,6 @@
 # Резюме/About
 
-## Cсылки на публично достцпные действующие проекты.
+## Cсылки на публично доступные действующие проекты.
 
 Все боты Telegram реализованы на Python 2.7 на платформе [Google App Engine Standard Environment](https://cloud.google.com/appengine/docs/standard/).
 
