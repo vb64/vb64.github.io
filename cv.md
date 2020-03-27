@@ -12,15 +12,15 @@
 
 [Python/Flask](https://github.com/vb64/bulls_cows)
 
-Пример использования [Yandex SpeechKit Cloud](https://developer.tech.yandex.ru/) и [библиотеки pyTelegramBotAPI](https://github.com/eternnoir/pyTelegramBotAPI). Вы отправляете голосовое сообщение боту Telegram, запущенному на вашем ПК. Бот в ответ присылает текст этого сообщения.
+Пример использования [Yandex SpeechKit Cloud](https://developer.tech.yandex.ru/) и библиотеки [pyTelegramBotAPI](https://github.com/eternnoir/pyTelegramBotAPI). Вы отправляете голосовое сообщение боту Telegram, запущенному на вашем ПК. Бот в ответ присылает текст этого сообщения.
 
 [Python](https://github.com/vb64/telegram.voice_echo_bot)
 
-Плагин для поддержки относительных путей в директивах `extend` и `include` в шаблонах Django. [Данный код был принят](https://github.com/django/django/commit/aec4f97555cbfc9d14d698f61d43a478f5911661) командой разработчиков и включен в основной код Django, начиная с версии 1.10.
+Плагин для поддержки относительных путей в директивах `extend` и `include` в шаблонах Django. Данный код был принят командой разработчиков и [включен в основной код]((https://github.com/django/django/commit/aec4f97555cbfc9d14d698f61d43a478f5911661)) Django, начиная с версии 1.10.
 
 [Python/Django](https://github.com/vb64/django.templates.relative.path)
 
-### Внутритрубная диагностика магистральных газопроводов
+### Внутритрубная диагностика магистральных трубопроводов
 
 Элементы корпоративного софта, выложенные в паблик.
 
