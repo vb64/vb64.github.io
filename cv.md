@@ -42,4 +42,4 @@
 
 [PotTeleBot](https://zen.yandex.ru/media/id/5a7c88094bf16140b018eb53/sovmestnye-rashody-5b3e609e9d936000a8dcc08b) - "общая касса" для совместных расходов в группах Telegram.
 
-[BusinessSectorBot](https://zen.yandex.ru/media/id/5a7c88094bf16140b018eb53/raspisanie-vashih-zadach-v-telegram-5be13850bd70ad00aa0ca47a) ведет расписание для людей и организаций, которые работают с клиентами по предварительной записи. Мини CRM полностью внутри Telegram.
+[BusinessSectorBot](https://vb64.github.io/telegram.business.sector/) ведет расписание для людей и организаций, которые работают с клиентами по предварительной записи. Мини CRM полностью внутри Telegram.
