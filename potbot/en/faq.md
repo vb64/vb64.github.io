@@ -15,3 +15,13 @@ Group admins in a group chat can use the bot `/cash` command to set the amount i
 If this participant had a zero balance, then nothing will change. If the leaving participant was to receive some amount from the group cash, this amount will be divided between the remaining members of the group (added to the balance). If the member had a debt to the group cash, then equal shares of this debt will be deducted from the balance sheets of the remaining members of the group.
 
 In any case, bot will report about the changes in the group chat.
+
+## If I remove the bot from the group?
+
+All the data of the joint expenses of this group will be lost. If you later add a bot to this group again, then all calculations will start from scratch.
+
+If you just need to reset the calculations, you not need to delete and re-add the bot. Use the `/reset` command in the group chat. In this case, the list of participants in the joint expenses will be saved, and all balance sheets and cost counters will be reset to zero.
+
+## Will this bot always be free?
+
+Yes.
