@@ -4,6 +4,7 @@
 
 - [Описание](ru/guide.md)
 - [FAQ](ru/faq.md)
+- [Промо](ru/promo.md)
 
 ## EN
 
