@@ -8,4 +8,4 @@ The bot will automatically add to the joint expenses the administrators of the g
 
 ## We already have a certain amount in the total pot. How can I take it into account in the calculations of the bot?
 
-Group admins in a group chat can use the bot `/cash` command to set the amount in the general box office. To report on refill and withdrawing money from the joint cash, you can use 'Money transfer report' menu in a private chat with a bot. Next you need to select the item 'Group cash'. If you specify a amount with a minus, then this is taking money from the group cash. If without a minus — it is a refill.
+Group admins in a group chat can use the bot `/cash` command to set the amount in the general box office. To report on refill and withdrawing money from the joint cash, you can use 'Money transfer report' menu in a private chat with a bot. Next you need to select the item 'Group cash'. If you specify a amount with a minus, then this is taking money from the group cash. If without a minus - it is a refill.
