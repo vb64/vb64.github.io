@@ -77,9 +77,9 @@ I have several of my own independently developed projects, available publicly. T
 
 Most popular projects:
 
-[EmailGateBot](https://vb64.github.io/telegram.email.notify/docs/ru/guide.html) - bot in Telegram Messenger. Assigns a special email address to Telegram channels and groups and publishes emails in them.
+[EmailGateBot](https://vb64.github.io/telegram.email.notify/docs/en/guide.html) - bot in Telegram Messenger. Assigns a special email address to Telegram channels and groups and publishes emails in them.
 
-[AlicaTalkBot](https://zen.yandex.ru/media/id/5a7c88094bf16140b018eb53/razgovor-s-telegoi-iandeksalisa-i-telegram-5cdbef3273f29b00b2d98a13) - YandexAlice voice assistant skill. Publishes phrases dictated for YandexAlice in the form of text in Telegram and sends responses from Telegram to Alice.
+AlicaTalkBot ([article in Russian](https://zen.yandex.ru/media/id/5a7c88094bf16140b018eb53/razgovor-s-telegoi-iandeksalisa-i-telegram-5cdbef3273f29b00b2d98a13)) - YandexAlice voice assistant skill. Publishes phrases dictated for YandexAlice in the form of text in Telegram and sends responses from Telegram to Alice.
 
 
 ## Contributing to open-source projects
