@@ -81,7 +81,7 @@ Python, wxPython, C/C++, sqlite.
 
 В разное время принимал участие в разработке нескольких программных проектов с открытым исходным кодом, в том числе DjangoProject. 
 
-Мой код для использования относительных путей в тегах extend и include шаблонов Django был одобрен Django core team, и [включен в релиз 1.10](https://github.com/django/django/commit/aec4f97555cbfc9d14d698f61d43a478f5911661).
+Мой код для использования относительных путей в тегах extend и include шаблонов Django, первоначально разработанный как [плагин для Django версий 1.4 - 1.9](https://github.com/vb64/django.templates.relative.path), был одобрен Django core team и [включен в релиз 1.10](https://github.com/django/django/commit/aec4f97555cbfc9d14d698f61d43a478f5911661).
 
 На ресурсе github.com в 2020 году [мой личный аккаунт](https://github.com/vb64) отмечен знаком "Arctic Code Vault Contributor".
 
