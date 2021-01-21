@@ -24,26 +24,20 @@ Experience in leading and coordinating small development teams.
 
 ### 06/2018 – to date, Chief Specialist, «Gazprom orgenergogaz» branch office «Saratovorgdiagnostika», RF Saratov
 
-Development of an app for creating technical reports that the organization provides to its customers.
-
-Development of a corporate system for planning and accounting for the performance of work under contracts with customers.
+- Development of an app for creating technical reports that the organization provides to its customers.
+- Development of a corporate system for planning and accounting for the performance of work under contracts with customers.
 
 #### Responsibilities:
 
-Preparation of customer requirements and requirements from regulatory documentation for technical reports.
-
-Development of the required software architecture.
-
-Implementation of architecture and requirements in the code, support of the code when new requirements from customers or new regulations appear.
-
-Support for up-to-date documentation for the developed software.
-
-Setting tasks, consulting, and coordinating the work of external developers.
+- Preparation of customer requirements and requirements from regulatory documentation for technical reports.
+- Development of the required software architecture.
+- Implementation of architecture and requirements in the code, support of the code when new requirements from customers or new regulations appear.
+- Support for up-to-date documentation for the developed software.
+- Setting tasks, consulting, and coordinating the work of external developers.
 
 #### Achievements:
 
 As the development progressed, some parts of the code, in agreement with the leadership of the organization, were extracted into separate libraries/modules and distributed for public use.
-
 This mainly concerned the implementation of [methods of regulatory documents](https://github.com/vb64/oeg.feature.class) and [protocols of interaction](https://github.com/vb64/oeg.infotech.xml) with centralized databases of JSC Gazprom Orgenergogaz.
 
 #### Technologies: 
@@ -52,15 +46,13 @@ Python, MS SQL Server, reportlab, pyinstaller, grip, Django, PostgreSQL, Docker
 
 ### 08/2012 - 06/2018, software engineer, JSC Gazpriboravtomatikaservice, RF Saratov
 
-Development and maintenance of an app for processing and analysis of diagnostics data to prepare a report for the customer.
-
-Providing support for data formats of new diagnostics equipment developed in the organization.
+- Development and maintenance of an app for processing and analysis of diagnostics data to prepare a report for the customer.
+- Providing support for data formats of new diagnostics equipment developed in the organization.
 
 #### Responsibilities: 
 
-Maintenance and support of the code of the GUI app for data visualization on the Windows platform.
-
-Implementation of methods for automatic determination of geometric parameters of defects in diagnostics data.
+- Maintenance and support of the code of the GUI app for data visualization on the Windows platform.
+- Implementation of methods for automatic determination of geometric parameters of defects in diagnostics data.
 
 #### Achievements:
 
