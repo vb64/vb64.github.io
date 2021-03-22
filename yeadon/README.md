@@ -7,6 +7,7 @@ https://web.archive.org/web/20201129113931/https://lockdownsceptics.org/what-sag
 by Mike Yeadon
 
 ![Chief Medical Officer, Professor Chris Whitty, and Chief Scientific Adviser, Sir Patrick Vallance, give a Coronavirus Data Briefing in 10 Downing Street. Picture by Pippa Fowles/No 10 Downing Street.](01.jpg)
+
 _Chief Medical Officer, Professor Chris Whitty, and Chief Scientific Adviser, Sir Patrick Vallance, give a Coronavirus Data Briefing in 10 Downing Street. Picture by Pippa Fowles/No 10 Downing Street._
 
 “It’s Easier to Fool People Than It Is to Convince Them That They Have Been Fooled.” – Mark Twain
@@ -120,6 +121,7 @@ That number is about 7%.
 Surely, this too cannot be so terribly important? And isn’t it true, anyway? Again, I regret to inform the reader that yes, its absolutely central. And no, its not true.
 
 ![Dr Yeadon has adjusted the size of the susceptible population in Chart 2 so it is between <30% and <40%](02.png)
+
 _Dr Yeadon has adjusted the size of the susceptible population in Chart 2 so it is between <30% and <40%_
 
 These charts are not intended to be mathematically perfect, as it’s not possible to convey all the subtleties of the situation.
@@ -358,6 +360,7 @@ Think for a moment: that is precisely what IS happening, right now, in London. T
 This matches my prediction. SAGE would say nothing has changed. It clearly has.
 
 ![A comparison of Covid deaths in the first six weeks of the epidemic with Covid deaths in the last six weeks](03.jpg)
+
 _A comparison of Covid deaths in the first six weeks of the epidemic with Covid deaths in the last six weeks_
 
 I have another prediction. Where we do regrettably see outbreaks, these will develop much more slowly than in the spring because the virus is finding it ever harder to find the next person to infect.
@@ -411,6 +414,7 @@ I respectfully suggest that this background has ideally placed me to assess othe
 and to bring well-grounded science to bear on complex issues, of which the SARS-CoV-2 is but one, albeit perhaps the most important work I’ve ever done.
 
 ![Deaths: France, Italy, Spain, UK](04.png)
+
 _Deaths: France, Italy, Spain, UK_
 
 The main point from these graphs is the trend line. The rising number of cases and deaths is proceeding 4x more slowly now than in the spring.
