@@ -11,7 +11,7 @@ Experience in leading and coordinating small development teams.
 
 ## Technical skills
 
-- Programming languages: Python, JavaScript, HTML, CSS
+- Programming languages: Python 2/3, JavaScript, HTML, CSS
 - Platforms: Windows, Linux, Google Cloud Platform
 - Frameworks: Django, Flask, wxPython
 - Version control: Git
@@ -42,7 +42,7 @@ This mainly concerned the implementation of [methods of regulatory documents](ht
 
 #### Technologies: 
 
-Python, MS SQL Server, reportlab, pyinstaller, grip, Django, PostgreSQL, Docker
+Python, MS SQL Server, reportlab, pyinstaller, grip, Django
 
 ### 08/2012 - 06/2018, software engineer, JSC Gazpriboravtomatikaservice, RF Saratov
 
@@ -91,3 +91,7 @@ On github.com in 2020, [my personal account](https://github.com/vb64) is marked 
 
 - English - B2
 - Russian - Native Speaker
+
+## Contacts
+
+[Email](mail@vitaly-bogomolov.ru), [Telegram](https://t.me/vvb64), [Github](https://github.com/vb64)

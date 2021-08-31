@@ -13,7 +13,7 @@ Python разработчик
 
 ## Технические навыки
 
-- Языки программирования: Python, JavaScript, HTML, CSS
+- Языки программирования: Python 2/3, JavaScript, HTML, CSS
 - Платформы: Windows, Linux, Google Cloud Platform
 - Библиотеки: Django, Flask, wxPython
 - Управление версиями: Git
@@ -45,7 +45,7 @@ Python разработчик
 
 #### Технологии: 
 
-Python, MS SQL Server, reportlab, pyinstaller, grip, Django, PostgreSQL, Docker
+Python, MS SQL Server, reportlab, pyinstaller, grip, Django
 
 ### 08/2012 - 06/2018, инженер-программист, ЗАО Газприборавтоматикасервис, РФ Саратов
 
@@ -94,3 +94,7 @@ Python, wxPython, C/C++, sqlite.
 ## Владение языками
 
 Английский - чтение и понимание технической документации, средние разговорные навыки.
+
+## Контакты
+
+[Email](mail@vitaly-bogomolov.ru), [Telegram](https://t.me/vvb64), [Github](https://github.com/vb64)
