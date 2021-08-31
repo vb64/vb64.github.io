@@ -97,4 +97,6 @@ Python, wxPython, C/C++, sqlite.
 
 ## Контакты
 
-[Email](mail@vitaly-bogomolov.ru), [Telegram](https://t.me/vvb64), [Github](https://github.com/vb64)
+- [Email](mailto:mail@vitaly-bogomolov.ru)
+- [Telegram](https://t.me/vvb64)
+- [Github](https://github.com/vb64)
