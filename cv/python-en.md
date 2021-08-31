@@ -94,4 +94,6 @@ On github.com in 2020, [my personal account](https://github.com/vb64) is marked 
 
 ## Contacts
 
-[Email](mail@vitaly-bogomolov.ru), [Telegram](https://t.me/vvb64), [Github](https://github.com/vb64)
+- [Email](mailto:mail@vitaly-bogomolov.ru)
+- [Telegram](https://t.me/vvb64)
+- [Github](https://github.com/vb64)
