@@ -13,7 +13,7 @@ Python разработчик
 
 ## Технические навыки
 
-- Языки программирования: Python 2/3, JavaScript, HTML, CSS
+- Языки программирования: Python 2/3
 - Платформы: Windows, Linux, Google Cloud Platform
 - Библиотеки: Django, Flask, wxPython
 - Управление версиями: Git
@@ -83,6 +83,8 @@ Python, wxPython, C/C++, sqlite.
 
 Мой код для использования относительных путей в тегах extend и include шаблонов Django, первоначально разработанный как [плагин для Django версий 1.4 - 1.9](https://github.com/vb64/django.templates.relative.path), был одобрен Django core team и [включен в релиз 1.10](https://github.com/django/django/commit/aec4f97555cbfc9d14d698f61d43a478f5911661).
 
+Из недавних разработок можно рассмотреть [библиотеку DjangoAdminGeomap](https://github.com/vb64/django.admin.geomap) для отображения объектов на карте в представлениях (views) и админке Django.
+
 На ресурсе github.com в 2020 году [мой личный аккаунт](https://github.com/vb64) отмечен знаком "Arctic Code Vault Contributor".
 
 
@@ -100,3 +102,4 @@ Python, wxPython, C/C++, sqlite.
 - [Email](mailto:mail@vitaly-bogomolov.ru)
 - [Telegram](https://t.me/vvb64)
 - [Github](https://github.com/vb64)
+- [Хабр](https://habr.com/ru/users/vb64/)
