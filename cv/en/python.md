@@ -80,7 +80,7 @@ At various times I was involved in the development of several open-source softwa
 
 My code for using relative paths in Django's extend and include tags, originally developed as a [plugin for Django versions 1.4 - 1.9](https://github.com/vb64/django.templates.relative.path), has been approved by the Django core team and is [included in the 1.10 release](https://github.com/django/django/commit/aec4f97555cbfc9d14d698f61d43a478f5911661).
 
-Recent developments is a [DjangoAdminGeomap library]((https://github.com/vb64/django.admin.geomap)) to display objects on the map in the Django views and admin site.
+Recent developments is a [DjangoAdminGeomap library](https://github.com/vb64/django.admin.geomap) to display objects on the map in the Django views and admin site.
 
 On github.com in 2020, [my personal account](https://github.com/vb64) is marked with the "Arctic Code Vault Contributor" sign.
 
