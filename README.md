@@ -12,3 +12,4 @@ https://t.me/iv?rhash=ca17b862ade957&url=https://vb64.github.io/cv/telegram-ru.h
 - [PotTeleBot](potbot/guide.md)
 - [BusinessSectorBot](https://vb64.github.io/telegram.business.sector/)
 - [TT Project](tt-project/guide.md)
+- [Разговор с телегой. Яндекс.Алиса и Telegram.](alica-talk-bot/README.md)
