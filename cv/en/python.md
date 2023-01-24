@@ -6,7 +6,7 @@ Python developer
 
 Python developer with 10+ years of experience.
 Development of GUI and CLI applications for Windows and Linux platforms, web applications in Django and Flask.
-Extensive experience with Google App Engine cloud platform and Telegram Bot API.
+Experience with Google App Engine cloud platform and Telegram Bot API.
 Experience in leading and coordinating small development teams.
 
 ## Technical skills
@@ -18,11 +18,15 @@ Experience in leading and coordinating small development teams.
 - Testing: pytest, pylint, flake8
 - i18n: gettext, python-babel
 - CI/CD: make, PyPi, Github Workflows, Bitbucket Pipelines
-- Databases: Google App Engine Datastore, PostgreSQL, MS SQL Server, MySQL
+- Databases: GoogleAppEngine Datastore, PostgreSQL, MySQL
 
 ## Experience
 
-### 06/2018 – to date, Chief Specialist, «Gazprom orgenergogaz» branch office «Saratovorgdiagnostika», RF Saratov
+### 06/2018 – to date, Chief Specialist, «Giproniigaz», RF Saratov
+
+Tasks, responsibilities and technology stack as in the previous work.
+
+### 06/2018 – 06/2022, Chief Specialist, «Gazprom orgenergogaz» branch office «Saratovorgdiagnostika», RF Saratov
 
 - Development of an app for creating technical reports that the organization provides to its customers.
 - Development of a corporate system for planning and accounting for the performance of work under contracts with customers.
@@ -34,11 +38,6 @@ Experience in leading and coordinating small development teams.
 - Implementation of architecture and requirements in the code, support of the code when new requirements from customers or new regulations appear.
 - Support for up-to-date documentation for the developed software.
 - Setting tasks, consulting, and coordinating the work of external developers.
-
-#### Achievements:
-
-As the development progressed, some parts of the code, in agreement with the leadership of the organization, were extracted into separate libraries/modules and distributed for public use.
-This mainly concerned the implementation of [methods of regulatory documents](https://github.com/vb64/oeg.feature.class) and [protocols of interaction](https://github.com/vb64/oeg.infotech.xml) with centralized databases of JSC Gazprom Orgenergogaz.
 
 #### Technologies: 
 
@@ -54,24 +53,9 @@ Python, MS SQL Server, reportlab, pyinstaller, grip, Django
 - Maintenance and support of the code of the GUI app for data visualization on the Windows platform.
 - Implementation of methods for automatic determination of geometric parameters of defects in diagnostics data.
 
-#### Achievements:
-
-Development and commissioning of API for connecting external apps for automatic analysis of diagnostics data.
-
 #### Technologies: 
 
 Python, wxPython, C/C++, sqlite.
-
-
-## Own projects
-
-I have several of my own independently developed projects, available publicly. The projects are developed in Python for the Google App Engine Standard Environment platform.
-
-Most popular projects:
-
-[EmailGateBot](https://vb64.github.io/telegram.email.notify/docs/en/guide.html) - bot in Telegram Messenger. Assigns a special email address to Telegram channels and groups and publishes emails in them.
-
-AlicaTalkBot ([article in Russian](https://zen.yandex.ru/media/id/5a7c88094bf16140b018eb53/razgovor-s-telegoi-iandeksalisa-i-telegram-5cdbef3273f29b00b2d98a13)) - YandexAlice voice assistant skill. Publishes phrases dictated for YandexAlice in the form of text in Telegram and sends responses from Telegram to Alice.
 
 
 ## Contributing to open-source projects
@@ -80,9 +64,17 @@ At various times I was involved in the development of several open-source softwa
 
 My code for using relative paths in Django's extend and include tags, originally developed as a [plugin for Django versions 1.4 - 1.9](https://github.com/vb64/django.templates.relative.path), has been approved by the Django core team and is [included in the 1.10 release](https://github.com/django/django/commit/aec4f97555cbfc9d14d698f61d43a478f5911661).
 
-Recent developments is a [DjangoAdminGeomap library](https://github.com/vb64/django.admin.geomap) to display objects on the map in the Django views and admin site.
+You can also consider the libraries I developed:
 
-On github.com in 2020, [my personal account](https://github.com/vb64) is marked with the "Arctic Code Vault Contributor" sign.
+- [DjangoAdminGeomap](https://github.com/vb64/django.admin.geomap) to display objects on the map in the Django views and admin site.
+- [DjangoAdminFilters](https://github.com/vb64/django.admin.filters) providing additional filters in Django admin site tables.
+
+
+## Own projects
+
+I have several of my own independently developed projects, available publicly. The projects are developed in Python for the Google App Engine Standard Environment platform.
+
+Most popular project is an [EmailGateBot](https://vb64.github.io/telegram.email.notify/docs/en/guide.html) - bot in Telegram Messenger. Assigns a special email address to Telegram channels and groups and publishes emails in them.
 
 
 ## Education and Certificates
