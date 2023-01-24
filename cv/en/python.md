@@ -4,10 +4,10 @@ Python developer
 
 ## Summary
 
-Python developer with 10+ years of experience.
-Development of GUI and CLI applications for Windows and Linux platforms, web applications in Django and Flask.
-Experience with Google App Engine cloud platform and Telegram Bot API.
-Experience in leading and coordinating small development teams.
+- Python developer with 10+ years of experience.
+- Development of GUI and CLI applications for Windows and Linux platforms, web applications in Django and Flask.
+- Experience with Google App Engine cloud platform and Telegram Bot API.
+- Experience in leading and coordinating small development teams.
 
 ## Technical skills
 
@@ -22,11 +22,13 @@ Experience in leading and coordinating small development teams.
 
 ## Experience
 
-### 06/2018 – to date, Chief Specialist, «Giproniigaz», RF Saratov
+### 06/2018 – to date
+Chief Specialist «Giproniigaz», RF Saratov
 
 Tasks, responsibilities and technology stack as in the previous work.
 
-### 06/2018 – 06/2022, Chief Specialist, «Gazprom orgenergogaz» branch office «Saratovorgdiagnostika», RF Saratov
+### 06/2018 – 06/2022
+Chief Specialist «Gazprom orgenergogaz» branch office «Saratovorgdiagnostika», RF Saratov
 
 - Development of an app for creating technical reports that the organization provides to its customers.
 - Development of a corporate system for planning and accounting for the performance of work under contracts with customers.
@@ -43,7 +45,8 @@ Tasks, responsibilities and technology stack as in the previous work.
 
 Python, MS SQL Server, reportlab, pyinstaller, grip, Django
 
-### 08/2012 - 06/2018, software engineer, JSC Gazpriboravtomatikaservice, RF Saratov
+### 08/2012 - 06/2018
+Software engineer JSC Gazpriboravtomatikaservice, RF Saratov
 
 - Development and maintenance of an app for processing and analysis of diagnostics data to prepare a report for the customer.
 - Providing support for data formats of new diagnostics equipment developed in the organization.
