@@ -24,6 +24,19 @@ Python разработчик
 - Базы данных: GoogleAppEngine Datastore, PostgreSQL, MySQL
 
 
+## Публично доступные примеры моего кода
+
+В разное время принимал участие в разработке нескольких программных проектов с открытым исходным кодом, в том числе DjangoProject. 
+
+Мой код для использования относительных путей в тегах extend и include шаблонов Django, первоначально разработанный как [плагин для Django версий 1.4 - 1.9](https://github.com/vb64/django.templates.relative.path),
+был одобрен Django core team и [включен в релиз 1.10](https://github.com/django/django/commit/aec4f97555cbfc9d14d698f61d43a478f5911661).
+
+Также можно рассмотреть разработанные мной библиотеки:
+
+- [DjangoAdminGeomap](https://github.com/vb64/django.admin.geomap) для отображения объектов на карте в представлениях (views) и админке Django.
+- [DjangoAdminFilters](https://github.com/vb64/django.admin.filters) предоставляющую дополнительные фильтры в таблицах админки Django.
+
+
 ## Опыт работы
 
 ### 11/2022 – по настоящее время
@@ -63,29 +76,6 @@ Python, MS SQL Server, reportlab, pyinstaller, grip, Django
 #### Технологии: 
 
 Python, wxPython, C/C++, sqlite.
-
-
-## Участие в проектах с открытым исходным кодом
-
-В разное время принимал участие в разработке нескольких программных проектов с открытым исходным кодом, в том числе DjangoProject. 
-
-Мой код для использования относительных путей в тегах extend и include шаблонов Django, первоначально разработанный как [плагин для Django версий 1.4 - 1.9](https://github.com/vb64/django.templates.relative.path), был одобрен Django core team и [включен в релиз 1.10](https://github.com/django/django/commit/aec4f97555cbfc9d14d698f61d43a478f5911661).
-
-Также можно рассмотреть разработанные мной библиотеки:
-
-- [DjangoAdminGeomap](https://github.com/vb64/django.admin.geomap) для отображения объектов на карте в представлениях (views) и админке Django.
-- [DjangoAdminFilters](https://github.com/vb64/django.admin.filters) предоставляющую дополнительные фильтры в таблицах админки Django.
-
-
-## Собственные проекты
-
-Имею несколько собственных самостоятельно разработанных проектов, доступных публично. Проекты разработаны на Python для платформы [Google App Engine Standard Environment](https://cloud.google.com/appengine/docs/standard/).
-
-Наиболее популярные проекты:
-
-[EmailGateBot](https://vb64.github.io/telegram.email.notify/docs/ru/guide.html) - бот в Telegram Messenger. Присваивает каналам и группам Telegram специальный адрес email и публикует в них сообщения, отправленные на этот адрес.
-
-[AlicaTalkBot](https://zen.yandex.ru/media/id/5a7c88094bf16140b018eb53/razgovor-s-telegoi-iandeksalisa-i-telegram-5cdbef3273f29b00b2d98a13) - навык голосового помощника Яндекс.Алиса. Публикует в Telegram в виде текста фразы, продиктованные Яндекс.Алисе и отправляет ответы из Telegram в Алису.
 
 
 ## Образование
