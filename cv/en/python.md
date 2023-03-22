@@ -36,15 +36,12 @@ You can also consider the libraries I developed:
 ## Experience
 
 ### 06/2018 – to date
-Chief Specialist «Giproniigaz», RF Saratov
+Chief Software Development Specialist «Giproniigaz». Saratov, Russian Federation.
 
 Tasks, responsibilities and technology stack as in the previous work.
 
 ### 06/2018 – 06/2022
-Chief Specialist «Gazprom orgenergogaz» branch office «Saratovorgdiagnostika», RF Saratov
-
-- Development of an app for creating technical reports that the organization provides to its customers.
-- Development of a corporate system for planning and accounting for the performance of work under contracts with customers.
+Chief Specialist «Gazprom orgenergogaz» branch office «Saratovorgdiagnostika». Saratov, Russian Federation.
 
 #### Responsibilities:
 
@@ -52,17 +49,14 @@ Chief Specialist «Gazprom orgenergogaz» branch office «Saratovorgdiagnostika�
 - Development of the required software architecture.
 - Implementation of architecture and requirements in the code, support of the code when new requirements from customers or new regulations appear.
 - Support for up-to-date documentation for the developed software.
-- Setting tasks, consulting, and coordinating the work of external developers.
+- Setting tasks, consulting, and coordinating the work of third party developers.
 
 #### Technologies: 
 
 Python, MS SQL Server, reportlab, pyinstaller, grip, Django
 
 ### 08/2012 - 06/2018
-Software engineer JSC Gazpriboravtomatikaservice, RF Saratov
-
-- Development and maintenance of an app for processing and analysis of diagnostics data to prepare a report for the customer.
-- Providing support for data formats of new diagnostics equipment developed in the organization.
+Software engineer JSC Gazpriboravtomatikaservice. Saratov, Russian Federation.
 
 #### Responsibilities: 
 
