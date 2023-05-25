@@ -14,6 +14,6 @@ For example, Johnny must refill $100 to the cashier, and Peter must receive $50 
 
 You can participate in several groups of cost sharing. For example, in a group of joint expenses at work and in a group of expenses for hiking with friends. In this case, when entering data, the bot will ask you which group this operation belongs to.
 
-If you have questions and suggestions on how to work PotTeleBot, then you can asks them to the developer in the [bot support group](https://t.me/joinchat/AAAAAEIrUaxb6GbxBi24BA).
+If you have questions and suggestions on how to work PotTeleBot, then you can asks them to the developer in the [bot support group](https://t.me/+QitRrFvoZvEGLbgE).
 
 Try [PotTeleBot](https://t.me/PotTeleBot?start=en)
