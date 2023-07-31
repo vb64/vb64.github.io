@@ -65,12 +65,13 @@ app = Flask(__name__)
 def ipn_tgwallet():
     for event in request.get_json():
         if event["type"] == "ORDER_PAID":
+            data = event["payload"]
             print("Оплачен счет N {} на сумму {} {}. Оплата {} {}.".format(
-              data["payload"]["externalId"],  # ID счета в вашем боте, который мы указывали при создании ссылки для оплаты
-              data["payload"]["orderAmount"]["amount"],  # Сумма счета, указанная при создании ссылки для оплаты
-              data["payload"]["orderAmount"]["currencyCode"],  # Валюта счета
-              data["payload"]["selectedPaymentOption"]["amount"]["amount"],  # Сколько оплатил покупатель
-              data["payload"]["selectedPaymentOption"]["amount"]["currencyCode"]  # В какой криптовалюте
+              data["externalId"],  # ID счета в вашем боте, который мы указывали при создании ссылки для оплаты
+              data["orderAmount"]["amount"],  # Сумма счета, указанная при создании ссылки для оплаты
+              data["orderAmount"]["currencyCode"],  # Валюта счета
+              data["selectedPaymentOption"]["amount"]["amount"],  # Сколько оплатил покупатель
+              data["selectedPaymentOption"]["amount"]["currencyCode"]  # В какой криптовалюте
             ))
 
     # нужно всегда возвращать код 200, чтобы WalletPay не делал повторных вызовов вебхука
