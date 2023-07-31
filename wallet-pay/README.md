@@ -1,4 +1,4 @@
-# Прием платежей в криптовалютах в Telegram боте с WalletPay и Python/Flask.
+# Прием платежей в криптовалютах в Telegram боте через WalletPay и Python/Flask.
 
 Приветствую сообщество.
 
@@ -34,11 +34,14 @@ def get_pay_link():
       'failReturnUrl': 'https://t.me/wallet',  # при отсутствии оплаты оставить покупателя в @wallet
     }
 
-    response = requests.post("https://pay.wallet.tg/wpay/store-api/v1/order", json=payload, headers=headers, timeout=10)
+    response = requests.post(
+      "https://pay.wallet.tg/wpay/store-api/v1/order",
+      json=payload, headers=headers, timeout=10
+    )
     data = response.json()
 
     if (response.status_code != 200) or (data['status'] not in ["SUCCESS", "ALREADY"]):
-        logging.warning("# json: %s", data)
+        logging.warning("# code: %s json: %s", response.status_code, data)
         return ''
 
     return data['data']['payLink']
@@ -46,8 +49,10 @@ def get_pay_link():
 
 Счет можно выставлять в долларах США, евро или рублях. Пересчет в BTC, TON, USDT будет выполнен по курсу WalletPay.
 
-Для подтверждения факта оплаты счета WalletPay предоставляет две опции: [периодический опрос состояния счета](https://docs.wallet.tg/pay/#tag/Order/operation/getPreview) с вашей стороны,
-либо [POST-запрос](https://docs.wallet.tg/pay/#section/Webhook) на указанный вами в личном кабинете `https` адрес (webhook в терминах WalletPay).
+Для подтверждения факта оплаты счета, WalletPay предоставляет две опции: 
+
+-   периодический опрос [состояния счета](https://docs.wallet.tg/pay/#tag/Order/operation/getPreview) с вашей стороны
+-   [POST-запрос](https://docs.wallet.tg/pay/#section/Webhook) на указанный вами в личном кабинете `https` адрес (webhook в терминах WalletPay)
 
 Я использовал второй вариант. Код обработчика вебхука может быть таким.
 
@@ -68,14 +73,16 @@ def ipn_tgwallet():
               data["payload"]["selectedPaymentOption"]["amount"]["currencyCode"]  # В какой криптовалюте
             ))
 
-    # нужно всегда возвращать код 200 в ответ, чтобы WalletPay не делал повторных вызовов вебхука
+    # нужно всегда возвращать код 200, чтобы WalletPay не делал повторных вызовов вебхука
     return 'OK'
 ```
 
 Прежде чем передавать оплаченный товар или услугу, нужно убедиться, что вызов вебхука пришел из WalletPay, а не от злоумыщленников, жаждущих заполучить наш товар бесплатно.
 
-Для этого WalletPay предлагает две опции: проверка принадлежности IP вызова к пулу IP адресов WalletPay,
-либо проверку хеша, вычисленного на основе данных вызова вебхука и вашего ключа API.
+Для этого WalletPay предлагает две опции:
+
+-   проверка принадлежности IP вызова к пулу IP адресов WalletPay
+-   проверка хеша, вычисленного на основе данных вызова вебхука и вашего ключа API
 
 Список IP адресов WalletPay можно найти в [документации](https://docs.wallet.tg/pay/#section/Webhook), а для проверки хеша можно использовать следующий код.
 
@@ -87,7 +94,7 @@ ENCODING = 'utf-8'
 def is_valid(flask_request):
     text = '.'.join([
       request.method,
-      request.path,
+      request.path,  # нужно использовать часть адреса без имени домена, '/tgwallet/ipn' в нашем случае
       request.headers.get('WalletPay-Timestamp'),
       base64.b64encode(request.get_data()).decode(ENCODING),
     ])
