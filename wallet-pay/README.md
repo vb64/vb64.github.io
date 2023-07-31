@@ -2,14 +2,14 @@
 
 Приветствую сообщество.
 
-Бот Telegram @wallet недавно предоставил API для приема платежей а сторонних Telegram ботах.
+Бот Telegram @wallet недавно предоставил [API для приема платежей](https://pay.wallet.tg/) в сторонних Telegram ботах. Из криптовалют поддерживаются BTC, TON, USDT.
 
 Необходимо зарегистрироваться на сайте, предоставить сведения о подключаемом к API боте, пройти процедуру идентификации (биометрия для физических лиц) и дождаться одобрения заявки и назначения размера комиссии для ваших платежей.
 У меня процедура заняла чуть более суток, комиссию назначили 1%.
 
 После одобрения заявки получаете доступ в личный кабинет, где нужно сгенерировать ключ для доступа к API WalletPay.
 
-Покупателю нужно предоставить ссылку на оплату товаров/услуг своего бота. Код для получения этой ссылки может быть таким.
+Покупателю нужно предоставить ссылку для оплаты через WalletPay товаров/услуг вашего бота. Код для получения этой ссылки может быть таким.
 
 ```python
 import requests
@@ -93,10 +93,10 @@ ENCODING = 'utf-8'
 
 def is_valid(flask_request):
     text = '.'.join([
-      request.method,
-      request.path,  # нужно использовать часть адреса без имени домена, '/tgwallet/ipn' в нашем случае
-      request.headers.get('WalletPay-Timestamp'),
-      base64.b64encode(request.get_data()).decode(ENCODING),
+      flask_request.method,  # 'POST'
+      flask_request.path,  # нужно использовать часть адреса без имени домена, '/tgwallet/ipn' в нашем случае
+      flask_request.headers.get('WalletPay-Timestamp'),
+      base64.b64encode(flask_request.get_data()).decode(ENCODING),
     ])
     signature = base64.b64encode(hmac.new(
       bytes('YOUR-API-KEY', ENCODING),
@@ -104,7 +104,7 @@ def is_valid(flask_request):
       digestmod=hashlib.sha256
     ).digest())
 
-    return request.headers.get('Walletpay-Signature') == signature.decode(ENCODING)
+    return flask_request.headers.get('Walletpay-Signature') == signature.decode(ENCODING)
 ```
 
 Затем использовать функцию `is_valid` для проверки в обработчике вебхука.
