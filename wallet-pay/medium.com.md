@@ -1,8 +1,8 @@
-# Прием платежей в криптовалютах в Telegram боте через WalletPay и Python/Flask.
+# Accepting cryptocurrency payments in the Telegram bot via WalletPay and Python/Flask.
 
-![Криптовалюты в Telegram](tcoin.jpg)
+![Cryptocurrency](tcoin.jpg)
 
-Приветствую сообщество.
+Hi all!
 
 Бот Telegram @wallet недавно предоставил [API для приема платежей](https://pay.wallet.tg/) в сторонних Telegram ботах. Из криптовалют поддерживаются BTC, TON, USDT.
 
