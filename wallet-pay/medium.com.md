@@ -54,7 +54,7 @@ The invoice can be issued in US dollars or euros. Conversion to BTC, TON, USDT w
 
 To ensure that the payment of an invoice was made, WalletPay provides two options:
 
--   periodic polling of the account status [account status](https://docs.wallet.tg/pay/#tag/Order/operation/getPreview)
+-   periodic polling of the [invoice status](https://docs.wallet.tg/pay/#tag/Order/operation/getPreview)
 -   [POST request](https://docs.wallet.tg/pay/#section/Webhook) at the `https` address you specified in your WalletPay dashboard (webhook in terms of WalletPay)
 
 I used the second option. The webhook handler code could look like this.
