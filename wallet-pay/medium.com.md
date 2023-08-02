@@ -4,15 +4,15 @@
 
 Hi all!
 
-Бот Telegram @wallet недавно предоставил [API для приема платежей](https://pay.wallet.tg/) в сторонних Telegram ботах. Из криптовалют поддерживаются BTC, TON, USDT.
+The Telegram @wallet bot recently provided an [API for accepting payments](https://pay.wallet.tg/) in third-party Telegram bots. Of the cryptocurrencies, BTC, TON, USDT are supported.
 
-Необходимо зарегистрироваться на сайте, предоставить сведения о подключаемом к API боте, пройти процедуру идентификации (биометрия для физических лиц), дождаться одобрения заявки и назначения размера комиссии для ваших платежей.
-У меня процедура заняла чуть более суток.
+You need to register on the site, provide information about the bot, that will be  connected to the API, go through the identification procedure (biometrics for individuals), wait for the application to be approved and setting the amount of commission for your payments.
+My procedure took a little over a day.
 
-После одобрения заявки получаете доступ в личный кабинет, где нужно сгенерировать ключ для доступа к API WalletPay.
+After the application is approved, you get access to your personal account, where you need to generate a key to access the WalletPay API.
 
-После этого можно приступать к продажам.
-Покупателю нужно предоставить ссылку для оплаты через WalletPay товаров/услуг вашего бота. Код для получения этой ссылки может быть таким.
+After that, you can start selling.
+The buyer needs a link to pay the invoice for the goods/services of your bot through WalletPay. The code to get this link could be like this.
 
 ```python
 import requests
@@ -26,15 +26,15 @@ def get_pay_link():
 
     payload = {
       'amount': {
-        'currencyCode': 'USD',  # выставляем счет в долларах США
+        'currencyCode': 'USD',  # invoice in US dollars
         'amount': '1.00',
       },
       'description': 'Goods and service.',
-      'externalId': 'XXX-YYY-ZZZ',  # ID счета на оплату в вашем боте
-      'timeoutSeconds': 60 * 60 * 24,  # время действия счета в секундах
-      'customerTelegramUserId': '999666999',  # ID аккаунта Telegram покупателя
-      'returnUrl': 'https://t.me/mybot',  # после успешной оплаты направить покупателя в наш бот
-      'failReturnUrl': 'https://t.me/wallet',  # при отсутствии оплаты оставить покупателя в @wallet
+      'externalId': 'XXX-YYY-ZZZ',  # invoice ID (in your bot) for payment
+      'timeoutSeconds': 60 * 60 * 24,  # invoice expiration time in seconds
+      'customerTelegramUserId': '999666999',  # buyer's Telegram account ID
+      'returnUrl': 'https://t.me/mybot',  # after successful payment redirect the buyer to your bot
+      'failReturnUrl': 'https://t.me/wallet',  # leave the buyer in @wallet if there is no payment
     }
 
     response = requests.post(
@@ -50,14 +50,14 @@ def get_pay_link():
     return data['data']['payLink']
 ```
 
-Счет можно выставлять в долларах США, евро или рублях. Пересчет в BTC, TON, USDT будет выполнен по курсу WalletPay.
+The invoice can be issued in US dollars or euros. Conversion to BTC, TON, USDT will be performed at the WalletPay rate.
 
-Для подтверждения факта оплаты счета, WalletPay предоставляет две опции: 
+To ensure that the payment of an invoice was made, WalletPay provides two options:
 
--   периодический опрос [состояния счета](https://docs.wallet.tg/pay/#tag/Order/operation/getPreview) с вашей стороны
--   [POST-запрос](https://docs.wallet.tg/pay/#section/Webhook) на указанный вами в личном кабинете `https` адрес (webhook в терминах WalletPay)
+-   periodic polling of the account status [account status](https://docs.wallet.tg/pay/#tag/Order/operation/getPreview)
+-   [POST request](https://docs.wallet.tg/pay/#section/Webhook) at the `https` address you specified in your WalletPay dashboard (webhook in terms of WalletPay)
 
-Я использовал второй вариант. Код обработчика вебхука может быть таким.
+I used the second option. The webhook handler code could look like this.
 
 ```python
 from flask import Flask, request
@@ -69,26 +69,26 @@ def ipn_tgwallet():
     for event in request.get_json():
         if event["type"] == "ORDER_PAID":
             data = event["payload"]
-            print("Оплачен счет N {} на сумму {} {}. Оплата {} {}.".format(
-              data["externalId"],  # ID счета в вашем боте, который мы указывали при создании ссылки для оплаты
-              data["orderAmount"]["amount"],  # Сумма счета, указанная при создании ссылки для оплаты
-              data["orderAmount"]["currencyCode"],  # Валюта счета
-              data["selectedPaymentOption"]["amount"]["amount"],  # Сколько оплатил покупатель
-              data["selectedPaymentOption"]["amount"]["currencyCode"]  # В какой криптовалюте
+            print("Paid invoice N {} for the amount {} {}. Payment {} {}.".format(
+              data["externalId"],  # Invoice ID (in your bot), which we specified when creating the payment link
+              data["orderAmount"]["amount"],  # Invoice amount specified when creating the payment link
+              data["orderAmount"]["currencyCode"],  # Invoice currency
+              data["selectedPaymentOption"]["amount"]["amount"],  # How much did the buyer pay
+              data["selectedPaymentOption"]["amount"]["currencyCode"]  # In what cryptocurrency
             ))
 
-    # нужно всегда возвращать код 200, чтобы WalletPay не делал повторных вызовов вебхука
+    # should always return code 200 to prevent WalletPay from calling the webhook again
     return 'OK'
 ```
 
-Прежде чем передавать оплаченный товар или услугу, нужно убедиться, что вызов вебхука пришел из WalletPay, а не от злоумыщленников, жаждущих заполучить наш товар бесплатно.
+Before transferring a paid product or service, you need to make sure that the webhook call came from WalletPay, and not from attackers who are eager to get our goods for free.
 
-Для этого WalletPay предлагает две опции:
+To do this, WalletPay offers two options:
 
--   проверка принадлежности IP вызова к пулу IP адресов WalletPay
--   проверка хеша, вычисленного на основе данных вызова вебхука и вашего ключа API
+-   checking whether the IP call belongs to the pool of WalletPay IP addresses
+-   verifying the hash calculated from the webhook call data and your API key
 
-Список IP адресов WalletPay можно найти в [документации](https://docs.wallet.tg/pay/#section/Webhook), а для проверки хеша можно использовать следующий код.
+The list of WalletPay IP addresses can be found in the [documentation](https://docs.wallet.tg/pay/#section/Webhook), and the following code can be used to verify the hash.
 
 ```python
 import base64, hashlib, hmac
@@ -98,7 +98,7 @@ ENCODING = 'utf-8'
 def is_valid(flask_request):
     text = '.'.join([
       flask_request.method,  # 'POST'
-      flask_request.path,  # нужно использовать часть адреса без имени домена, '/tgwallet/ipn' в нашем случае
+      flask_request.path,  # you need to use part of the address without the domain name, '/tgwallet/ipn' in our case
       flask_request.headers.get('WalletPay-Timestamp'),
       base64.b64encode(flask_request.get_data()).decode(ENCODING),
     ])
@@ -111,6 +111,6 @@ def is_valid(flask_request):
     return flask_request.headers.get('Walletpay-Signature') == signature.decode(ENCODING)
 ```
 
-Затем использовать функцию `is_valid` для проверки в обработчике вебхука.
+Then use the `is_valid` function to validate call in the webhook handler.
 
-Спасибо за внимание.
+Thank you for your attention.
