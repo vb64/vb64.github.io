@@ -30,7 +30,7 @@ Python разработчик
 Мой код для использования относительных путей в тегах extend и include шаблонов Django, первоначально разработанный как [плагин для Django версий 1.4 - 1.9](https://github.com/vb64/django.templates.relative.path),
 был одобрен Django core team и [включен в релиз 1.10](https://github.com/django/django/commit/aec4f97555cbfc9d14d698f61d43a478f5911661).
 
-Также можно рассмотреть разработанные мной библиотеки:
+Также можно рассмотреть разработанные мной библиотеки с открытым кодом:
 
 - [Markdown-pdf](https://github.com/vb64/markdown-pdf) для создания PDF файлов из содержимого в формате `markdown`.
 - [DjangoAdminGeomap](https://github.com/vb64/django.admin.geomap) для отображения объектов на карте в представлениях (views) и админке Django.
