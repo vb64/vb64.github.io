@@ -7,18 +7,17 @@ Python developer
 - Python developer with 10+ years of experience.
 - Development of GUI and CLI applications for Windows and Linux platforms, web applications in Django and Flask.
 - Experience with Google App Engine cloud platform and Telegram Bot API.
-- Experience in leading and coordinating small development teams.
 
 ## Technical skills
 
-- Programming languages: Python 2/3
+- Programming languages: Python
 - Platforms: Windows, Linux, Google Cloud Platform
 - Frameworks: Django, Flask, wxPython
 - Version control: Git
 - Testing: pytest, pylint, flake8
 - i18n: gettext, python-babel
 - CI/CD: make, PyPi, Github Workflows, Bitbucket Pipelines
-- Databases: GoogleAppEngine Datastore, PostgreSQL, MySQL
+- Databases: GoogleAppEngine Datastore, PostgreSQL
 
 ## Publicly available examples of my code
 
@@ -29,6 +28,7 @@ has been approved by the Django core team and is [included in the 1.10 release](
 
 You can also consider the libraries I developed:
 
+- [Markdown-pdf](https://github.com/vb64/markdown-pdf) to create PDF file from your content in markdown format.
 - [DjangoAdminGeomap](https://github.com/vb64/django.admin.geomap) to display objects on the map in the Django views and admin site.
 - [DjangoAdminFilters](https://github.com/vb64/django.admin.filters) providing additional filters in Django admin site tables.
 

@@ -9,19 +9,18 @@ Python разработчик
 - Разработчик на Python с опытом более 10 лет.
 - Разработка GUI и CLI приложений для Windows и Linux платформ, web-приложений на Django и Flask.
 - Опыт работы с платформой GoogleAppEngine и Telegram Bot API.
-- Опыт руководства и координации работы группы разработчиков.
 
 
 ## Технические навыки
 
-- Языки программирования: Python 2/3
+- Языки программирования: Python
 - Платформы: Windows, Linux, Google Cloud Platform
 - Библиотеки: Django, Flask, wxPython
 - Управление версиями: Git
 - Тестирование: pytest, pylint, flake8
 - Интернационализация: gettext, python-babel
 - CI/CD: make, PyPi, Github Workflows, Bitbucket Pipelines
-- Базы данных: GoogleAppEngine Datastore, PostgreSQL, MySQL
+- Базы данных: GoogleAppEngine Datastore, PostgreSQL
 
 
 ## Публично доступные примеры моего кода
@@ -33,6 +32,7 @@ Python разработчик
 
 Также можно рассмотреть разработанные мной библиотеки:
 
+- [Markdown-pdf](https://github.com/vb64/markdown-pdf) для создания PDF файлов из содержимого в формате `markdown`.
 - [DjangoAdminGeomap](https://github.com/vb64/django.admin.geomap) для отображения объектов на карте в представлениях (views) и админке Django.
 - [DjangoAdminFilters](https://github.com/vb64/django.admin.filters) предоставляющую дополнительные фильтры в таблицах админки Django.
 
